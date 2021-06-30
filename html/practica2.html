@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Practica2</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Mensajes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Configuracion</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="#mymodal" data-bs-toggle="modal" data-bs-target="#mymodal" class="nav-link">Perfil</a>
+              </li>
+          </ul>
+          
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                El sencillo habla de un hombre que extraña terriblemente a la mujer que aún ama. En la letra, se hace referencia a Yonaguni, una isla al sur de Japón, conocida también por sus ruinas submarinas.
+                Según la página Genius.com, en donde se analiza el significado detrás de letras de canciones, Bad Bunny usa esta remota isla japonesa como una «metáfora» para describir lo mucho que desea a la mujer protagonista del tema.
+                <br> <img src="../img/f850x638-4451_81940_5050.jpg" class="img-fluid img-thumbnail rounded-circle mx-auto d-block" alt="">
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <ul class="list-group">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+            </div>
+
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+            </div>
+            <div class="modal" id="mymodal" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title">Iniciar sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../img/4b463f287cd814216b7e7b2e52e82687.png_1805022883.png" alt="" class="img-fluid rounded-circle">
+                    <form>
+                      <div class="form-group ">
+                        <label class="form-label" for="iniciar">Usuario:</label>
+                        <input type="text" class="form-control" name="iniciar" id="" placeholder="Escribe tu nombre de usuario">
+                      </div>
+                      <div class="form-group ">
+                        <label class="form-label" for="pass">Contraseña:</label>
+                        <input type="password" class="form-control" name="pass" id="" placeholder="Escribe tu contraseña">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Iniciar</button>
+                  </div>
+                </div>
+              </div>
+            
+
+          </div>
+          <script src="../js/bootstrap.min.js"></script>
+    </div>
+</body>
+</html>
